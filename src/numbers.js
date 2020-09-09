@@ -35,8 +35,8 @@ const absolute = a => {
 };
 
 const quotient = (a, b) => {
-  return ((a * b) >=0 || -1) * Math.floor(Math.abs(a / b));
-};  
+  return (a * b >= 0 || -1) * Math.floor(Math.abs(a / b));
+};
 
 const remainder = (a, b) => {
   return a % b;

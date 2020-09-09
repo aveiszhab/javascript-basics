@@ -1,5 +1,5 @@
 const createPerson = (name, age) => {
-  return person = { name:name, age:age};
+  return { name, age };
 };
 
 const getName = object => {
@@ -11,7 +11,7 @@ const getProperty = (property, object) => {
 };
 
 const hasProperty = (property, object) => {
-  return Object.prototype.hasOwnProperty.call(object,property);
+  return Object.prototype.hasOwnProperty.call(object, property);
 };
 
 const isOver65 = person => {
@@ -31,13 +31,13 @@ const findHondas = cars => {
 };
 
 const averageAge = people => {
-  return people.reduce((total, value) => total + value.age,0) / people.length;
+  return people.reduce((total, value) => total + value.age, 0) / people.length;
 };
 
 const createTalkingPerson = (name, age) => {
   return {
-    name: name,
-    age: age,
+    name,
+    age,
     introduce: toName => `Hi ${toName}, my name is ${name} and I am ${age}!`
   };
 };

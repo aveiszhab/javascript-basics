@@ -3,15 +3,15 @@ const negate = a => {
 };
 
 const both = (a, b) => {
-  return a&&b;
+  return a && b;
 };
 
 const either = (a, b) => {
-  return a||b;
+  return a || b;
 };
 
 const none = (a, b) => {
-  return !a&&!b;
+  return !a && !b;
 };
 
 const one = (a, b) => {
@@ -23,15 +23,15 @@ const truthiness = a => {
 };
 
 const isEqual = (a, b) => {
-  return( a === b);
+  return a === b;
 };
 
 const isGreaterThan = (a, b) => {
-  return (a > b);
+  return a > b;
 };
 
 const isLessThanOrEqualTo = (a, b) => {
-  return (a <= b);
+  return a <= b;
 };
 
 const isOdd = a => {
@@ -43,24 +43,19 @@ const isEven = a => {
 };
 
 const isSquare = a => {
-  return Math.sqrt(a) % 1 === 0;  
+  return Math.sqrt(a) % 1 === 0;
 };
 
 const startsWith = (char, string) => {
-  return char === string[0]; 
+  return char === string[0];
 };
 
 const containsVowels = string => {
-  let input = string.toLowerCase();
-  const vowels = ['a','e','i','o','u'];
-  const resultArray = [];
-    for (let i = 0; i < input.length; i++) {
-      for (let j = 0; j < vowels.length; j++) {
-        if(input[i] === vowels[j]){resultArray.push(input[i])}
-    }
-  }
-  return !!resultArray.length;
-}
+  const splitArray = string.split("");
+  const myFunction = letter =>
+    ["a", "e", "i", "o", "u"].includes(letter.toLowerCase());
+  return splitArray.some(myFunction);
+};
 
 const isLowerCase = string => {
   return string.charAt(0).toLowerCase() === string.charAt(0);
