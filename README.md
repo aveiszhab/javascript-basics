@@ -1,4 +1,15 @@
-# JavaScript Basics
+This is a course project part of the Manchester Codes curriculum.
+The project was built on Manchester Codes repository as per the below instructions.
+# Concepts
+
+* Primitive data types - booleans, numbers, strings
+* Data structures - arrays, objects
+* Functions
+* Operators
+* Control-flow
+___________________
+
+# JavaScript Basics instructions
 
 The repository contains test cases and empty function definitions which need to be populated to solve the different challenges set in this weeks walkthrough. 🚨*You should not update the tests* 🚨
 
